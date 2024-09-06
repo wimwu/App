@@ -1,5 +1,14 @@
 @file:Suppress("UnstableApiUsage")
 
+include(":core:datastore")
+
+
+include(":core:common")
+
+
+include(":core:ui")
+
+
 pluginManagement {
     includeBuild("build-logic")
     repositories {
@@ -21,7 +30,7 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-
 rootProject.name = "App"
+
 include(":app")
- 
+include(":core:network")
