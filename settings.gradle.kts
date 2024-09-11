@@ -1,14 +1,5 @@
 @file:Suppress("UnstableApiUsage")
 
-include(":core:datastore")
-
-
-include(":core:common")
-
-
-include(":core:ui")
-
-
 pluginManagement {
     includeBuild("build-logic")
     repositories {
@@ -33,4 +24,7 @@ dependencyResolutionManagement {
 rootProject.name = "App"
 
 include(":app")
+include(":core:ui")
+include(":core:common")
 include(":core:network")
+include(":core:datastore")
